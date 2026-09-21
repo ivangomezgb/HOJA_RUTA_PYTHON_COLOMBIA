@@ -1,20 +1,20 @@
 /* =============================================
-   HOJA DE RUTA PYTHON — COLOMBIA
-   Paleta calida, dark/light automatico
+    HOJA DE RUTA PYTHON — COLOMBIA
+    Paleta calida, dark/light automatico
    ============================================= */
 
 /* --- TOKENS --- */
 :root {
   /* Fondos — blanco calido, no puro */
   --bg:           #f8f7f5;
-  --bg-2:         #f0eeeb;
-  --bg-3:         #e6e3de;
-  --border:       #ccc9c2;
-  --border-soft:  #dedad4;
+  --bg-2:         #ecf0eb;
+  --bg-3:         #F0C42E;
+  --border:       #f3aa00;
+  --border-soft:  #F0C42E;
 
   /* Texto — grises calidos */
   --text:         #1c1917;
-  --text-2:       #57534e;
+  --text-2:       #ef940c;
   --text-3:       #78716c;
 
   /* Acento — verde bosque suave */
@@ -24,22 +24,22 @@
   --accent-inv:   #ffffff;
 
   /* Codigo */
-  --code-bg:      #ede9e3;
-  --code-text:    #9a3412;
+  --code-bg:      #ede3ea;
+  --code-text:    #3b129a;
 
   /* Sidebar */
   --sidebar-w:    224px;
-  --sidebar-bg:   #f2f0ec;
-  --sidebar-bdr:  #dedad4;
+  --sidebar-bg:   #0D0D1A;
+  --sidebar-bdr:  #0D0D1A;
 
   /* Barra de progreso */
   --prog-bg:      #dedad4;
-  --prog-fill:    #2d6a4f;
+  --prog-fill:    #ffea00; 
 
   /* Badges */
   --badge-prev-bg:    #e6e3de;  --badge-prev-txt:  #57534e;
-  --badge-active-bg:  #2d6a4f;  --badge-active-txt:#ffffff;
-  --badge-next-bg:    #bee1c4;  --badge-next-txt:  #1a4731;
+  --badge-active-bg:  #F0C42E;  --badge-active-txt:#ffffff;
+  --badge-next-bg:    #bee1c4;  --badge-next-txt:  #F0C42E;
   --badge-future-bg:  #f0eeeb;  --badge-future-txt:#a8a29e;
 
   --radius:    6px;
@@ -53,27 +53,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:           #18171a;
-    --bg-2:         #211f24;
-    --bg-3:         #2c2930;
-    --border:       #3a3640;
-    --border-soft:  #302d35;
-    --text:         #f0eee9;
-    --text-2:       #b5b0a8;
-    --text-3:       #7c7670;
-    --accent:       #52b788;
-    --accent-2:     #74c69d;
+    --bg:           #0D0D1A; 
+    --bg-2:         #16162E;
+    --bg-3:         #16162E;
+    --border:       #fee900;
+    --border-soft:  #00bfff;
+    --text:         #f1e9f4;
+    --text-2:       #f0eee9;
+    --text-3:       #f0ebe6;
+    --accent:       #4B8BBE; /*Color de letras y modulos,botones por dentro */
+    --accent-2:     #2FB350; /* Color al pisar los botones */
     --accent-light: #1a3a2a;
-    --accent-inv:   #0f1f18;
-    --code-bg:      #232028;
-    --code-text:    #f4a261;
+    --accent-inv:   #ebf3e9;
+    --code-bg:      #0e0e10;
+    --code-text:    #e2d9d2;
     --sidebar-bg:   #141316;
     --sidebar-bdr:  #2c2930;
     --prog-bg:      #2c2930;
-    --prog-fill:    #52b788;
+    --prog-fill:    #4B8BBE; /*Color de barra de progreso */
     --badge-prev-bg:    #2c2930;  --badge-prev-txt:  #7c7670;
-    --badge-active-bg:  #52b788;  --badge-active-txt:#0f1f18;
-    --badge-next-bg:    #1a3a2a;  --badge-next-txt:  #74c69d;
+    --badge-active-bg:  #F0C42E;  --badge-active-txt:#0f1f18;
+    --badge-next-bg:    #1a3a2a;  --badge-next-txt:  #4B8BBE;
     --badge-future-bg:  #211f24;  --badge-future-txt:#4a4540;
     --shadow:    0 1px 3px rgba(0,0,0,.4);
     --shadow-md: 0 4px 12px rgba(0,0,0,.5);
@@ -81,7 +81,7 @@
 }
 
 /* =============================================
-   RESET
+    RESET
    ============================================= */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -146,7 +146,7 @@ body.sidebar-open .layout {
 }
 
 /* =============================================
-   SIDEBAR
+    SIDEBAR
    ============================================= */
 .sidebar {
   position: fixed;
@@ -328,7 +328,7 @@ body.sidebar-open .layout {
 }
 
 /* =============================================
-   CONTENIDO
+    CONTENIDO
    ============================================= */
 .container {
   max-width: 860px;
@@ -376,7 +376,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   PRINCIPIOS
+    PRINCIPIOS
    ============================================= */
 .principles-grid {
   display: grid;
@@ -403,7 +403,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .result-box strong { color: var(--text); }
 
 /* =============================================
-   PHASES
+    PHASES
    ============================================= */
 .phases { list-style: none; padding: 0; }
 .phase {
@@ -460,7 +460,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .badge--future { background: var(--badge-future-bg); color: var(--badge-future-txt); opacity: .75; }
 
 /* =============================================
-   MODULE CARDS (acordeones)
+    MODULE CARDS (acordeones)
    ============================================= */
 .module-card {
   border: 1px solid var(--border);
@@ -598,7 +598,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .proportion-note { font-size: .77rem; color: var(--text-3); font-style: italic; }
 
 /* =============================================
-   TABLA PY5
+    TABLA PY5
    ============================================= */
 .py5-grid {
   display: grid;
@@ -613,7 +613,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   REPOS
+    REPOS
    ============================================= */
 .repos-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(188px, 1fr)); gap: .9rem;
@@ -654,7 +654,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   RESOURCES
+    RESOURCES
    ============================================= */
 .resources-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
 .resource-group h3 {
@@ -676,7 +676,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   DOCS OFICIALES
+    DOCS OFICIALES
    ============================================= */
 .docs-grid { display: flex; flex-direction: column; gap: 1.3rem; }
 .doc-group h3 {
@@ -685,7 +685,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   PRACTICA (cards clicables)
+    PRACTICA (cards clicables)
    ============================================= */
 .practice-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: .75rem;
@@ -703,7 +703,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .practice-tag  { font-size: .68rem; font-family: var(--mono); color: var(--text-3); }
 
 /* =============================================
-   MILESTONES
+    MILESTONES
    ============================================= */
 .milestones {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); gap: .85rem;
@@ -721,7 +721,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .milestone--empty .milestone-phase { color: var(--text-3); }
 
 /* =============================================
-   CHECKLIST
+    CHECKLIST
    ============================================= */
 .checklist-toolbar {
   display: flex; align-items: center; justify-content: space-between;
@@ -891,14 +891,14 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 }
 
 /* =============================================
-   FOOTER
+    FOOTER
    ============================================= */
 .site-footer { border-top: 1px solid var(--border); padding: 1.7rem 0; }
 .site-footer p { font-size: .79rem; color: var(--text-3); margin-bottom: .22rem; }
 .footer-note   { font-size: .73rem !important; font-family: var(--mono); }
 
 /* =============================================
-   SCROLLBAR
+    SCROLLBAR
    ============================================= */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-2); }
@@ -906,7 +906,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
 
 /* =============================================
-   RESPONSIVE
+    RESPONSIVE
    ============================================= */
 
 /* --- Tablet (600px – 899px) --- */
