@@ -18,8 +18,8 @@
   --text-3:       #78716c;
 
   /* Acento — verde bosque suave */
-  --accent:       #2d6a4f;
-  --accent-2:     #4a7c59;
+  --accent:       #1900ff;
+  --accent-2:     #808cb4;
   --accent-light: #d8f3dc;
   --accent-inv:   #ffffff;
 
@@ -56,14 +56,14 @@
     --bg:           #0D0D1A; 
     --bg-2:         #16162E;
     --bg-3:         #16162E;
-    --border:       #fee900;
+    --border:       #fe000076;
     --border-soft:  #00bfff;
     --text:         #f1e9f4;
     --text-2:       #f0eee9;
     --text-3:       #f0ebe6;
     --accent:       #4B8BBE; /*Color de letras y modulos,botones por dentro */
-    --accent-2:     #2FB350; /* Color al pisar los botones */
-    --accent-light: #1a3a2a;
+    --accent-2:     #ffa600; /* Color al pisar los botones */
+    --accent-light: #0B1B3D;
     --accent-inv:   #ebf3e9;
     --code-bg:      #0e0e10;
     --code-text:    #e2d9d2;
