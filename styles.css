@@ -1,82 +1,118 @@
 /* =============================================
-    HOJA DE RUTA PYTHON — COLOMBIA
-    Paleta calida, dark/light automatico
+   HOJA DE RUTA PYTHON — COLOMBIA
+   Paleta extraida de python.org.co
+   Fondo noche #0d0d1a + amarillo #ffd43b + azul #4b8bbe
    ============================================= */
 
-/* --- TOKENS --- */
+/* --- TOKENS (light mode — dia) --- */
 :root {
-  /* Fondos — blanco calido, no puro */
-  --bg:           #f8f7f5;
-  --bg-2:         #ecf0eb;
-  --bg-3:         #F0C42E;
-  --border:       #f3aa00;
-  --border-soft:  #F0C42E;
+  /* Fondos claros con tinte azul muy suave */
+  --bg:           #f2f4f8;
+  --bg-2:         #e8ecf4;
+  --bg-3:         #d8dff0;
+  --border:       #c2cce0;
+  --border-soft:  #d4dcec;
 
-  /* Texto — grises calidos */
-  --text:         #1c1917;
-  --text-2:       #ef940c;
-  --text-3:       #78716c;
+  /* Texto oscuro legible */
+  --text:         #0d0d1a;
+  --text-2:       #2a3050;
+  --text-3:       #6b7494;
 
-  /* Acento — verde bosque suave */
-  --accent:       #1900ff;
-  --accent-2:     #808cb4;
-  --accent-light: #d8f3dc;
+  /* Acento principal — azul Python */
+  --accent:       #306998;
+  --accent-2:     #4b8bbe;
+  --accent-light: #ddeeff;
   --accent-inv:   #ffffff;
 
+  /* Amarillo Python como acento secundario */
+  --yellow:       #ffd43b;
+  --yellow-dk:    #b89600;
+
+  /* Acentos del mosaico del logo */
+  --red:          #e24329;
+  --orange:       #f58220;
+  --green:        #2fb350;
+  --purple:       #5c4ee5;
+
   /* Codigo */
-  --code-bg:      #ede3ea;
-  --code-text:    #3b129a;
+  --code-bg:      #e0e8f5;
+  --code-text:    #306998;
 
   /* Sidebar */
   --sidebar-w:    224px;
-  --sidebar-bg:   #0D0D1A;
-  --sidebar-bdr:  #0D0D1A;
+  --sidebar-bg:   #1a1e2e;
+  --sidebar-bdr:  #252b40;
 
   /* Barra de progreso */
-  --prog-bg:      #dedad4;
-  --prog-fill:    #ffea00; 
+  --prog-bg:      #d0d8ec;
+  --prog-fill:    #ffd43b;
 
   /* Badges */
-  --badge-prev-bg:    #e6e3de;  --badge-prev-txt:  #57534e;
-  --badge-active-bg:  #F0C42E;  --badge-active-txt:#ffffff;
-  --badge-next-bg:    #bee1c4;  --badge-next-txt:  #F0C42E;
-  --badge-future-bg:  #f0eeeb;  --badge-future-txt:#a8a29e;
+  --badge-prev-bg:    #d8dff0;   --badge-prev-txt:  #4a5270;
+  --badge-active-bg:  #ffd43b;   --badge-active-txt:#0d0d1a;
+  --badge-next-bg:    #ddeeff;   --badge-next-txt:  #306998;
+  --badge-future-bg:  #eaecf5;   --badge-future-txt:#8890b0;
 
   --radius:    6px;
   --radius-lg: 10px;
-  --shadow:    0 1px 3px rgba(28,25,23,.07);
-  --shadow-md: 0 4px 14px rgba(28,25,23,.10);
+  --shadow:    0 1px 4px rgba(13,13,26,.08);
+  --shadow-md: 0 4px 16px rgba(13,13,26,.12);
   --tr:        .18s ease;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
+/* --- TOKENS (dark mode — noche, colores exactos de python.org.co) --- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:           #0D0D1A; 
-    --bg-2:         #16162E;
-    --bg-3:         #16162E;
-    --border:       #fe000076;
-    --border-soft:  #00bfff;
-    --text:         #f1e9f4;
-    --text-2:       #f0eee9;
-    --text-3:       #f0ebe6;
-    --accent:       #4B8BBE; /*Color de letras y modulos,botones por dentro */
-    --accent-2:     #ffa600; /* Color al pisar los botones */
-    --accent-light: #0B1B3D;
-    --accent-inv:   #ebf3e9;
-    --code-bg:      #0e0e10;
-    --code-text:    #e2d9d2;
-    --sidebar-bg:   #141316;
-    --sidebar-bdr:  #2c2930;
-    --prog-bg:      #2c2930;
-    --prog-fill:    #4B8BBE; /*Color de barra de progreso */
-    --badge-prev-bg:    #2c2930;  --badge-prev-txt:  #7c7670;
-    --badge-active-bg:  #F0C42E;  --badge-active-txt:#0f1f18;
-    --badge-next-bg:    #1a3a2a;  --badge-next-txt:  #4B8BBE;
-    --badge-future-bg:  #211f24;  --badge-future-txt:#4a4540;
-    --shadow:    0 1px 3px rgba(0,0,0,.4);
-    --shadow-md: 0 4px 12px rgba(0,0,0,.5);
+    /* Fondos noche */
+    --bg:           #0d0d1a;   /* fondo principal — negro azulado */
+    --bg-2:         #12122a;   /* cards y sidebar */
+    --bg-3:         #16162e;   /* hover, thead, encabezados */
+    --border:       #252b40;   /* borde visible */
+    --border-soft:  #1e2238;   /* borde suave entre filas */
+
+    /* Texto */
+    --text:         #f4f4f5;   /* blanco cálido — texto principal */
+    --text-2:       #a8b0cc;   /* texto secundario */
+    --text-3:       #5a6280;   /* texto terciario / placeholders */
+
+    /* Acento — azul Python claro sobre fondo oscuro */
+    --accent:       #4b8bbe;   /* azul Python claro */
+    --accent-2:     #6baed4;   /* hover azul */
+    --accent-light: #0b1b3d;   /* fondo tenue del acento */
+    --accent-inv:   #0d0d1a;
+
+    /* Amarillo Python */
+    --yellow:       #ffd43b;
+    --yellow-dk:    #ffe873;
+
+    /* Acentos del mosaico */
+    --red:          #e24329;
+    --orange:       #f58220;
+    --green:        #2fb350;
+    --purple:       #5c4ee5;
+
+    /* Codigo */
+    --code-bg:      #0e0e20;
+    --code-text:    #4b8bbe;
+
+    /* Sidebar */
+    --sidebar-bg:   #0a0a16;
+    --sidebar-bdr:  #1e2238;
+
+    /* Barra de progreso */
+    --prog-bg:      #1e2238;
+    --prog-fill:    #ffd43b;
+
+    /* Badges */
+    --badge-prev-bg:    #16162e;   --badge-prev-txt:  #5a6280;
+    --badge-active-bg:  #ffd43b;   --badge-active-txt:#0d0d1a;
+    --badge-next-bg:    #0b1b3d;   --badge-next-txt:  #4b8bbe;
+    --badge-future-bg:  #12122a;   --badge-future-txt:#3a4060;
+
+    --shadow:    0 1px 4px rgba(0,0,0,.5);
+    --shadow-md: 0 4px 16px rgba(0,0,0,.6);
   }
 }
 
@@ -178,7 +214,7 @@ body.sidebar-open .layout {
   font-weight: 700;
   letter-spacing: .05em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #ffd43b;
   font-family: var(--mono);
   flex: 1;
   white-space: nowrap;
@@ -340,25 +376,56 @@ body.sidebar-open .layout {
 .hero {
   border-bottom: 1px solid var(--border);
   padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #0d0d1a 0%, #12122a 100%);
 }
 .cohort-label {
   font-size: .73rem;
   font-family: var(--mono);
-  color: var(--text-3);
-  letter-spacing: .08em;
+  color: #ffd43b;
+  letter-spacing: .1em;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.cohort-label::before {
+  content: '';
+  display: inline-flex;
+  gap: 3px;
+  width: 52px;
+  height: 8px;
+  background: linear-gradient(to right,
+    #e24329 0%, #e24329 16%,
+    #f58220 18%, #f58220 33%,
+    #ffd43b 35%, #ffd43b 50%,
+    #2fb350 52%, #2fb350 67%,
+    #4b8bbe 69%, #4b8bbe 83%,
+    #5c4ee5 85%, #5c4ee5 100%
+  );
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 .hero h1 {
   font-size: clamp(1.5rem, 3.5vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 1rem;
   max-width: 600px;
+  color: #f4f4f5;
 }
+.hero h1 span { color: #ffd43b; }
 .hero-desc {
   max-width: 600px;
-  color: var(--text-2);
+  color: rgba(244,244,245,.72);
   font-size: .93rem;
+}
+
+/* Subtitulo del hero en azul (como en la imagen) */
+.hero-sub {
+  font-size: .97rem;
+  color: #4b8bbe;
+  font-weight: 600;
+  margin-bottom: .5rem;
 }
 
 /* SECTIONS */
@@ -803,8 +870,8 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
   cursor: pointer; border: 1px solid var(--border);
   transition: background var(--tr), color var(--tr);
 }
-.run-btn   { background: var(--accent); color: var(--accent-inv); border-color: var(--accent); font-weight: 600; }
-.run-btn:hover { background: var(--accent-2); }
+.run-btn   { background: var(--yellow); color: #0d0d1a; border-color: var(--yellow); font-weight: 700; }
+.run-btn:hover { background: var(--yellow-dk); border-color: var(--yellow-dk); }
 .clear-btn { background: var(--bg-2); color: var(--text-2); }
 .clear-btn:hover { background: var(--bg-3); }
 #py-editor {
@@ -843,20 +910,20 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
   margin-right: .4rem;
   font-size: .76rem;
   font-family: var(--mono);
-  font-weight: 600;
+  font-weight: 700;
   padding: .3em .75em;
   border-radius: var(--radius);
-  border: 1px solid var(--accent);
-  background: var(--accent);
-  color: var(--accent-inv);
+  border: 1px solid var(--yellow);
+  background: var(--yellow);
+  color: #0d0d1a;
   text-decoration: none;
   transition: background var(--tr), color var(--tr), border-color var(--tr);
   cursor: pointer;
 }
 .tool-btn:hover {
-  background: var(--accent-2);
-  border-color: var(--accent-2);
-  color: var(--accent-inv);
+  background: var(--yellow-dk);
+  border-color: var(--yellow-dk);
+  color: #0d0d1a;
   opacity: 1;
 }
 .tool-btn--sec {
@@ -867,7 +934,7 @@ section h2 { font-size: 1.28rem; margin-bottom: .55rem; }
 .tool-btn--sec:hover {
   background: var(--accent-light);
   color: var(--accent);
-  border-color: var(--accent);
+  border-color: var(--accent-2);
   opacity: 1;
 }
 
